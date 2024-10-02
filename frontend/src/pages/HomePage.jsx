@@ -4,7 +4,7 @@ import toast from "react-hot-toast";
 import Search from "../components/Search";
 import SortRepos from "../components/SortRepos";
 import ProfileInfo from "../components/ProfileInfo";
-import Spinner from "../components/spinner";
+import Spinner from "../components/Spinner";
 import Repos from "../components/Repos";
 
 const HomePage = () => {
