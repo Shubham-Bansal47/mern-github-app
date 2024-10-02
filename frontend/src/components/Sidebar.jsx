@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import { IoHomeSharp } from "react-icons/io5";
 import { FaHeart } from "react-icons/fa";
@@ -6,9 +5,10 @@ import { MdOutlineExplore } from "react-icons/md";
 import { PiSignInBold } from "react-icons/pi";
 import { MdEditDocument } from "react-icons/md";
 import Logout from "./Logout.jsx";
+import { useAuthContext } from "../context/AuthContext.jsx";
 
 const Sidebar = () => {
-  const authUser = true;
+  const { authUser } = useAuthContext();
   return (
     <aside
       className="flex flex-col items-center min-w-12 sm-w-16 sticky top-0 left-0 h-screen py-8 

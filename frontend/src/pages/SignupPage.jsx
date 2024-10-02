@@ -1,6 +1,6 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import { FaGithub, FaUnlockAlt } from "react-icons/fa";
+import { handleLoginWithGithub } from "../lib/function";
 
 const SignupPage = () => {
   return (
@@ -13,6 +13,7 @@ const SignupPage = () => {
           <button
             type="button"
             className="text-white bg-[#24292f] hover:bg-[#24292f]/90 focus:ring-4 focus:ring-[#24292f]/50 font-medium rounded-lg flex gap-2 p-2 items-center w-full text-center justify-center"
+            onClick={handleLoginWithGithub}
           >
             <FaGithub className="w-5 h-5" />
             Sign up with Github
